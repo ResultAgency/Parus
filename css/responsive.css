@@ -1,0 +1,7 @@
+@media (min-width: 960px){
+    #s9 .body .panel-group{
+        max-width: 500px;
+        width: 100%;
+
+    }
+}
