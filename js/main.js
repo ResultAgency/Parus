@@ -8,6 +8,23 @@ $(document).ready(function(){
         autoplayTimeout:5000,
         autoplayHoverPause:true,
 
+        responsive:{
+            0:{
+                items:1,
+                nav:false,
+                margin: 0
+            },
+            600:{
+                items:2
+            },
+            1000:{
+                items:3
+            },
+            1100:{
+                items:4
+            }
+        },
+
         nav:true,
         navText: [
             '<div class="icon">'+
@@ -34,6 +51,19 @@ $(document).ready(function(){
 
         nav: true,
         dots: true,
+
+        responsive:{
+            0:{
+                items:1,
+                nav:false
+            },
+            600:{
+                items:1
+            },
+            1000:{
+                items:1
+            }
+        },
         navText: [
             '<div class="icon">'+
                 '<svg viewBox="0 0 512 512">'+
@@ -54,7 +84,7 @@ $(document).ready(function(){
     });
 
     $.each($("#s3 .img"),function (i,e) {
-        $(e).css('background','url(img/miniatures/'+$(e).data('image')+'.jpg) center no-repeat');
+        $(e).css('background-image','url(img/miniatures/'+$(e).data('image')+'.jpg)');
         $(e).on('click',function () {
             ChangeMiniature(this)
         })
@@ -87,10 +117,10 @@ var miniature=$("#miniature");
 function ChangeMiniature(element) {
     miniature.addClass('fadeOut');
     setTimeout(function () {
-        miniature.css('background',
+        miniature.css('background-image',
             'url(img/miniatures/'
             +$(element).data('image')
-            +'.jpg) center no-repeat');
+            +'.jpg)');
         miniature.removeClass('fadeOut');
     },150);
 }

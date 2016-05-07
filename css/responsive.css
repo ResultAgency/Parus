@@ -1,7 +1,185 @@
+@media (min-width: 600px){
+    .navbar-collapse{
+        background: transparent;
+    }
+    .navbar ul{
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+        -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+
+    }
+
+    .tool {
+        height: 160px;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        margin: 120px 0;
+
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+    .head {
+        height: 160px;
+        padding: 0 30px;
+        width: -webkit-calc(100% - 160px);
+    }
+    .head h1{
+        font-size: 35px;
+        text-align: left;
+    }
+    .logo{
+        width: 160px;
+        height: 160px;
+        background: url("../img/logo.jpg") center no-repeat;
+        background-size: cover;
+        display: block;
+    }
+    #s8 .comment .box {
+        width: -webkit-calc(100% - 40);
+        margin: 0 40px;
+    }
+
+    #s8 .comment .text {
+        margin-left: 40px;
+    }
+    #s10 .contact{
+        width: 50%;
+    }
+}
+
 @media (min-width: 960px){
     #s9 .body .panel-group{
         max-width: 500px;
         width: 100%;
+    }
+    #s2 .text {
+        text-align: left;
+    }
+    #s1{
+        background: url('../img/background-s1.jpg')center no-repeat;
+        background-size: cover;
+        min-height: 300px;
+    }
+
+    #s10 {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+    }
+    #s10 .body,#s10 .map{
+        width: 50%;
+    }
+    #s7 .body .box{
+        width: 33.3%;
+    }
+    #s10 .contact {
+        width: 100%;
+    }
+    #s10 .contacts{
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+    #s3 .owl-next,#s3 .owl-prev{
+        top: 50%;
+        -webkit-transform: translate(0, -50%);
+        -moz-transform: translate(0, -50%);
+        -ms-transform: translate(0, -50%);
+        -o-transform: translate(0, -50%);
+        transform: translate(0, -50%);
+        background: rgba(255,255,255,0.85);
+        transition: 0.3s;
+        position: absolute;
+        padding: 25px;
+    }
+    #s8 .comment .box {
+        width: -webkit-calc(100% - 60);
+        margin: 0 60px;
+    }
+    #s8 .comment .text{
 
     }
+    .head-form form input[type="phone"] {
+        width: 300px;
+    }
+    button.btn-custom-success {
+        width: 300px;
+    }
+    #s1{
+        min-height: 100vh;
+        padding: 15px 0;
+    }
+    #s8 .comment .text {
+        margin-left: 50px;
+    }
+
+    button.btn-custom-success {
+        margin: 5px 15px;
+    }
+    .call-back form input[type="phone"] {
+        width: 300px;
+    }
+    #s7 .body .service {
+        margin: 20px 10px;
+    }
+}
+@media (min-width: 1100px){
+    #s2 .about{
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+        padding-bottom: 0;
+    }
+    #s2 .text{
+        width: 30%;
+        padding: 60px 40px;
+    }
+    #s2 .miniature{
+        width: 70%;
+        padding-bottom: 0;
+    }
+    #s10 .contact {
+        width: 50%;
+    }
+
+
 }

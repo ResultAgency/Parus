@@ -1,6 +1,12 @@
 *{
     font-family: 'Open Sans', sans-serif;
     outline: none !important;
+
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -o-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 input:-moz-placeholder{
@@ -19,11 +25,13 @@ input::-webkit-input-placeholder {
 #s1{
     background: url('../img/background-s1.jpg')center no-repeat;
     background-size: cover;
-    min-height: 100vh;
-
+    padding: 25px 0;
 }
 .collapse{
     text-align: center;
+}
+.navbar-collapse{
+    background: #0091c3;
 }
 .navbar ul{
     width: 100%;
@@ -33,12 +41,12 @@ input::-webkit-input-placeholder {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
@@ -48,6 +56,7 @@ input::-webkit-input-placeholder {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
 }
 .nav li a:hover{
     background: none;
@@ -73,19 +82,15 @@ input::-webkit-input-placeholder {
 .nav li a:hover span:after{
     background-color: rgba(0, 147, 197, 1);
 }
-
 .tool{
     max-width: 750px;
-    height: 160px;
-
-    margin: 120px 0;
 
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -webkit-flex-wrap: nowrap;
     -ms-flex-wrap: nowrap;
     flex-wrap: nowrap;
@@ -95,15 +100,14 @@ input::-webkit-input-placeholder {
     -webkit-align-content: flex-start;
     -ms-flex-line-pack: start;
     align-content: flex-start;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
 }
 .head{
-    height: 160px;
     background: #0092c4;
     padding: 0 30px;
-    width: -webkit-calc(100% - 160px);
+    width: 100%;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -126,14 +130,16 @@ input::-webkit-input-placeholder {
 .head h1{
     text-transform: uppercase;
     color: white;
-    font-size: 35px;
+    font-size: 28px;
     font-weight: 600;
+    text-align: center;
 }
 .logo{
     width: 160px;
     height: 160px;
     background: url("../img/logo.jpg") center no-repeat;
     background-size: cover;
+    display: none;
 }
 .head-form{
     color: white;
@@ -161,9 +167,9 @@ input::-webkit-input-placeholder {
     border: 0;
     padding: 10px 15px;
     font-size: 14px;
-    width: 300px;
+    width: 280px;
     text-align: center;
-    margin: 0 15px;
+    margin: 5px;
     text-transform: uppercase;
 }
 button.btn-custom-success{
@@ -174,8 +180,8 @@ button.btn-custom-success{
     text-align: center;
     padding: 10px 15px;
     border-radius: 40px;
-    width: 300px;
-    margin: 0 15px;
+    width: 280px;
+    margin: 5px 0px;
     text-transform: uppercase;
     position: relative;
     border: 1px solid #0092c4;
@@ -210,9 +216,9 @@ button.white:hover{
 button.white:hover .icon{
     fill: #0092c4;
 }
-#s2{
-    min-height: 100vh;
-}
+/*#s2{*/
+    /*min-height: 80vh;*/
+/*}*/
 #s2 .about{
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -220,9 +226,9 @@ button.white:hover .icon{
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-flex-wrap: nowrap;
-    -ms-flex-wrap: nowrap;
-    flex-wrap: nowrap;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -244,8 +250,9 @@ button.white:hover .icon{
     text-align: center;
 }
 #s2 .text{
-    width: 30%;
-    padding: 60px 40px;
+    width: 100%;
+    padding: 20px 20px;
+    text-align: center;
 }
 #s2 .text .quote{
     margin-bottom: 80px;
@@ -273,9 +280,13 @@ button.white:hover .icon{
     float: right;
 }
 .miniature{
-    width: 70%;
+    width: 100%;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: 0.15s;
+    padding-bottom: 75%;
+    min-height: 300px;
 }
 #s3{
     background: #0090c2;
@@ -285,8 +296,10 @@ button.white:hover .icon{
     width: 310px;
     height: 210px;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     box-shadow: 4px 0 30px rgba(0,0,0,0.55);
-    margin: 50px 0;
+    margin: 50px auto;
     cursor: pointer;
     position: relative;
 }
@@ -550,9 +563,9 @@ button.white:hover .icon{
     border: 0;
     padding: 10px 15px;
     font-size: 14px;
-    width: 300px;
+    width: 280px;
     text-align: center;
-    margin: 0 15px;
+    margin: 15px 15px;
     text-transform: uppercase;
 }
 
@@ -784,13 +797,11 @@ button.white:hover .icon{
 
     padding: 30px 0;
 }
-#s7 .body .box{
-    width: 33.3%;
-}
+
 #s7 .body .service-box{
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 15px;
+
 
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -816,8 +827,8 @@ button.white:hover .icon{
 }
 #s7 .body .service{
     height: 75px;
-    width: 325px;
-    margin: 20px 0;
+    width: 320px;
+    margin: 20px 0px;
     color: white;
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -933,8 +944,6 @@ button.white:hover .icon{
     align-items: center;
 }
 #s8 .comment .box{
-    width: -webkit-calc(100% - 60);
-    margin: 0 60px;
 
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -970,7 +979,6 @@ button.white:hover .icon{
 #s8 .comment .text{
     width: 500px;
     min-height: 150px;
-    margin-left: 50px;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -985,6 +993,8 @@ button.white:hover .icon{
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
+
+    margin-bottom: 35px;
 }
 #s8 .comment .text p{
     font-style: italic;
@@ -1168,9 +1178,9 @@ button.white:hover .icon{
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -1187,8 +1197,8 @@ button.white:hover .icon{
 #s10{
     min-height: 420px;
 }
-#s10 .body,#s10 .map{
-    width: 50%;
+.map{
+    min-height: 300px;
 }
 #s10>.body>.title{
     background: #0093c5;
@@ -1217,9 +1227,9 @@ button.white:hover .icon{
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-align-content: stretch;
     -ms-flex-line-pack: stretch;
     align-content: stretch;
@@ -1229,8 +1239,6 @@ button.white:hover .icon{
 }
 
 #s10 .contact{
-    width: 50%;
-
     display: -ms-inline-flexbox;
     display: -webkit-inline-flex;
     display: inline-flex;
@@ -1271,4 +1279,8 @@ button.white:hover .icon{
 }
 #s10 .call-back form button{
     width: 250px;
+}
+
+.navbar-toggle .icon-bar {
+    background: white;
 }
