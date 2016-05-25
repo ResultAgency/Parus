@@ -131,7 +131,7 @@
     #s8 .comment .text{
 
     }
-    .head-form form input[type="phone"] {
+    .head-form form input[name="telephone"] {
         width: 300px;
     }
     button.btn-custom-success {
@@ -148,7 +148,7 @@
     button.btn-custom-success {
         margin: 5px 15px;
     }
-    .call-back form input[type="phone"] {
+    .call-back form input[name="telephone"] {
         width: 300px;
     }
     #s7 .body .service {

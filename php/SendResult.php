@@ -7,3 +7,6 @@ curl_setopt($ch, CURLOPT_POSTFIELDS, $_POST);
 
 curl_exec($ch);
 curl_close($ch);
+
+
+return "success";

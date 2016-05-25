@@ -20,9 +20,6 @@ $(document).ready(function(){
                 var form = this;
                 var errors = false;
 
-                $(form).find('input[name="telephone"]').val(
-                    $(form).find('#kay').val()+$(form).find('#phone').val()
-                );
                 this.inputs.filter(function (item,index) {
                     return index.getAttribute('type')=='text';
                 }).each(function () {
@@ -34,7 +31,7 @@ $(document).ready(function(){
                         errors = true;
                     }
                 });
-                if (!errors && this.site && this.product) {
+                if (!errors) {
 
                     $(form).find("button[type='submit']").tooltip({
                         title: "Заявка Отправлена",
@@ -43,31 +40,27 @@ $(document).ready(function(){
                         placement: "top"
                     }).tooltip('show');
 
-                    this.inputs.each(function () {
-                        form.datasend += this.getAttribute('name') + '=' + this.value + "&";
-                    });
-                    console.log(form.datasend);
                     $.ajax({
                         url: 'php/SendResult.php',
                         type: 'POST',
-                        data: form.datasend,
+                        data: $(form).serialize(),
                         success: function () {
-                            form.datasend = '';
-
+                            console.log($(form).serialize());
+                            $(form).find('input[type="text"]').each(function () {
+                                $(this).val('');
+                            });
                         },
                         error: function () {
                         }
                     });
-                    $(form).find('input[type="text"]').each(function () {
-                        $(this).val('');
-                    });
+
                 }
             }
             catch (e){
                 console.error(e);
             }
             return false;
-        }).find('#phone').mask('(999) 999-99-99');
+        }).find('input[name="telephone"]').mask('+380 (99) 999-99-99');
     });
 
     function validate(input,form){

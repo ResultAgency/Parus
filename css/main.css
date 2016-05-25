@@ -188,7 +188,7 @@ input::-webkit-input-placeholder {
     display: block;
     margin: 15px 0;
 }
-.head-form form input[type="phone"]{
+.head-form form input[name="telephone"]{
     background: white;
     color: black;
     border-radius: 40px;
@@ -604,7 +604,7 @@ button.white:hover .icon{
 .call-back form{
     margin: 35px 0;
 }
-.call-back form input[type="phone"]{
+.call-back form input[name="telephone"]{
     background: #e5e5e5;
     color: black;
     border-radius: 40px;
@@ -1322,7 +1322,7 @@ button.white:hover .icon{
     color: #0093c5;
     text-transform: none;
 }
-#s10 .call-back form input[type="phone"]{
+#s10 .call-back form input[name="telephone"]{
     width: 250px;
 }
 #s10 .call-back form button{
