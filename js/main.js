@@ -79,15 +79,13 @@ $(document).ready(function(){
     });
 
 
-    $(".owl-carousel").on('changed.owl.carousel',function () {
-        ChangeMiniature($(".owl-carousel .center .img"));
-    });
+    // $(".owl-carousel").on('changed.owl.carousel',function () {
+    //     ChangeMiniature($(".owl-carousel .center .img"));
+    // });
 
     $.each($("#s3 .img"),function (i,e) {
         $(e).css('background-image','url(img/miniatures/'+$(e).data('image')+'.jpg)');
-        $(e).on('click',function () {
-            ChangeMiniature(this)
-        })
+        
     });
 
     initMap();
@@ -113,14 +111,14 @@ $(document).ready(function(){
     }
 
 });
-var miniature=$("#miniature");
-function ChangeMiniature(element) {
-    miniature.addClass('fadeOut');
-    setTimeout(function () {
-        miniature.css('background-image',
-            'url(img/miniatures/'
-            +$(element).data('image')
-            +'.jpg)');
-        miniature.removeClass('fadeOut');
-    },150);
-}
+// var miniature=$("#miniature");
+// function ChangeMiniature(element) {
+//     miniature.addClass('fadeOut');
+//     setTimeout(function () {
+//         miniature.css('background-image',
+//             'url(img/miniatures/'
+//             +$(element).data('image')
+//             +'.jpg)');
+//         miniature.removeClass('fadeOut');
+//     },150);
+// }
