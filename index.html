@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.css">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
@@ -19,6 +20,18 @@
 <main class="container-fluid">
 
     <section id="s1" class="row">
+
+        <div class="overlay"></div>
+        <div class="video-bg">
+            <div class="embed-responsive embed-responsive-16by9">
+                <video width="100%" height="100%" autoplay muted loop>
+                    <source src="video/MainBg_720.mp4" type="video/mp4" media="min-width:1200px">
+                    <source src="video/MainBg_480.mp4" type="video/mp4" media="min-width:991px">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+
         <nav class="navbar">
             <div class="container-fluid">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -120,8 +133,15 @@
 
             </div>
 
-            <div id="miniature" class="miniature" style="background-image: url('img/miniatures/m1.jpg');">
-
+            <div id="miniature" class="miniature">
+                <div class="embed-responsive embed-responsive-16by9" >
+                    <video width="100%" height="100%" controls preload="none" poster="video/Poster.jpg">
+                        <source src="video/About_720.mp4" type="video/mp4" media="min-width:1920px">
+                        <source src="video/About_480.mp4" type="video/mp4" media="min-width:991px">
+                        <source src="video/About_360.mp4" type="video/mp4" media="min-width:760px">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
             </div>
 
         </div>
@@ -130,7 +150,7 @@
 
     <section id="s3" class="row">
         <div class="owl-carousel">
-            <div><div class="img" data-image="m1"><div class="overlay">
+            <div><div class="img" rel="s3" data-fancybox-href="img/miniatures/m1.jpg"><div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -139,7 +159,7 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div> </div>
-            <div><div class="img" data-image="m2"><div class="overlay">
+            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m2.jpg"><div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -148,7 +168,7 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div> </div>
-            <div><div class="img" data-image="m3"><div class="overlay">
+            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m3.jpg"><div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -157,7 +177,7 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div></div>
-            <div><div class="img" data-image="m4"><div class="overlay">
+            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m4.jpg"><div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -166,7 +186,7 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div></div>
-            <div><div class="img" data-image="m5"><div class="overlay">
+            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m5.jpg"><div class="overlay">
                             <div class="icon">
                                 <svg viewBox="0 0 512 512">
                                     <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -925,6 +945,7 @@
 <script src="js/jquery-2.2.3.min.js"></script>
 <script src="bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
+<script src='js/jquery.fancybox.pack.js'></script>
 
 <script src="https://maps.googleapis.com/maps/api/js?"></script>
 <script src="js/main.js"></script>
