@@ -311,8 +311,6 @@ button.white:hover .icon,button.white:focus .icon{
     width: 100%;
     background-color: black;
     transition: 0.15s;
-    padding-bottom: 75%;
-    min-height: 300px;
 
     display: -ms-flexbox;
     display: -webkit-flex;

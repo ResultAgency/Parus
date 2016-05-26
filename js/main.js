@@ -253,3 +253,13 @@ $(document).ready(function(){
     }
 
 });
+var video = document.getElementById('about-video');
+
+$('#about-video').on('click',function (e) {
+    if(video.paused){
+        video.play();
+    }
+    else{
+        video.pause();
+    }
+});
