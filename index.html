@@ -126,7 +126,7 @@
                         </svg>
                     </div>
                 </div>
-                <button class="btn btn-custom-success white">получить консультацию
+                <button data-toggle="modal" data-target="#consult" class="btn btn-custom-success white">получить консультацию
                     <div class="icon">
                         <svg viewBox="0 0 512 512">
                             <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -301,7 +301,7 @@
             <p>На берегу очаровательной реки Десна,
                 мы создали атмосферу уюта и тепла.</p>
 
-            <button class="btn btn-custom-success">получить консультацию
+            <button data-toggle="modal" data-target="#consult" class="btn btn-custom-success">получить консультацию
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -364,7 +364,7 @@
 
 
         <div class="box-button">
-            <button class="btn btn-custom-success white">получить консультацию
+            <button data-toggle="modal" data-target="#consult" class="btn btn-custom-success white">получить консультацию
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -925,6 +925,32 @@
     </section>
 
 </main>
+
+
+<div class="modal fade bs-example-modal-sm" id="consult" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+        <h3>бесплатная консультация</h3>
+
+        <h4>Наш лучший менеджер позвонит вам в течении 25 секунд и ответит на все вопросы</h4>
+        <form action="">
+            <input type="text" name="telephone" placeholder="+380 (__) ___-__-__" required>
+
+            <input type="hidden" name="name" value="">
+            <input type="hidden" name="email" value="">
+            <input type="hidden" name="site" value="29">
+            <input type="hidden" name="product" value="Консультация">
+            <button type="submit" class="btn btn-custom-success">получить консультацию
+                <div class="icon">
+                    <svg viewBox="0 0 512 512">
+                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                             xlink:href="#right-arrow"></use>
+                    </svg>
+                </div>
+            </button>
+        </form>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
 
 <svg style="display: none;">
     <defs>
