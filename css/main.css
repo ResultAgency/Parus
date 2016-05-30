@@ -532,11 +532,12 @@ button.white:hover .icon,button.white:focus .icon{
     font-size: 18px;
     font-weight: 600;
     margin: 0;
-    padding: 0 40px;
+    padding: 0 30px;
 }
 #s4 .box .box-body{
     position: relative;
     background-size: cover;
+    background-repeat: no-repeat;
     height: 150px;
     width: 100%;
     padding: 30px;
@@ -564,7 +565,7 @@ button.white:hover .icon,button.white:focus .icon{
     position: absolute;
     height: 100%;
     width: 100%;
-    background: rgba(0,0,0,0.45);
+    /*background: rgba(0,0,0,0.2);*/
     top: 0;
     left: 0;
     z-index: 0;
@@ -1413,5 +1414,39 @@ button.white:hover .icon,button.white:focus .icon{
 .modal button.btn.btn-custom-success{
     width: 100%;
     margin: 5px 0;
-
+}
+.scrollTop{
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    background: #0092c4;
+    padding: 5px;
+    border: none;
+    transition: 0.3s;
+    -webkit-transition: .3s;
+    z-index: 322;
+}
+.scrollTop .icon{
+    width: 29px;
+    height: 29px;
+    line-height: 14px;
+    fill: white;
+    stroke: white;
+    transition: 0.3s;
+    -webkit-transition: .3s;
+    position: relative;
+    vertical-align: middle;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -ms-transform:rotate(270deg);
+    -o-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+.scrollTop:hover{
+    background: rgba(0, 147, 197, 0);
+    border-radius: 50px;
+}
+.scrollTop:hover .icon{
+    fill: #818181;
+    stroke: #818181;
 }

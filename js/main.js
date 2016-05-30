@@ -220,10 +220,7 @@ $(document).ready(function(){
         ]
     });
 
-
-    // $(".owl-carousel").on('changed.owl.carousel',function () {
-    //     ChangeMiniature($(".owl-carousel .center .img"));
-    // });
+    
 
     $.each($("#s3 .img"),function (i,e) {
         $(e).css('background-image','url('+$(e).data('fancybox-href'));
@@ -233,12 +230,12 @@ $(document).ready(function(){
     initMap();
     function initMap() {
         var map = new google.maps.Map(document.getElementById('map'), {
-            center: {lat: 50.568180, lng: 30.464230},
+            center: {lat: 50.604165, lng: 30.676247},
             zoom: 15
         });
-
+        
         var marker = new google.maps.Marker({
-            position: {lat: 50.568180, lng: 30.464230},
+            position: {lat: 50.604165, lng: 30.676247},
             map: map
         });
 
@@ -247,7 +244,7 @@ $(document).ready(function(){
         });
 
         var infowindow = new google.maps.InfoWindow({
-            content: "ResultAgency"
+            content: "Киевская обл., Броварской р-н., с. Пуховка, СТ Вега № 208. Ресторан Парус на Десне"
         });
 
     }
@@ -262,4 +259,17 @@ $('#about-video').on('click',function (e) {
     else{
         video.pause();
     }
+});
+
+$(".scroll").click(function(event) {
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: $(this.hash).offset().top 
+    }, 1000);
+});
+
+$(".scrollTop").click(function(event) {
+    $('html, body').animate({
+        scrollTop: 0
+    }, 1000);
 });

@@ -86,9 +86,9 @@
     #s1 .video-bg,#s5 .video-bg{
         display: block;
     }
-    #s5 .body{
-        background: none;
-    }
+    /*#s5 .body{*/
+        /*background: none;*/
+    /*}*/
     #s10 {
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
