@@ -27,6 +27,9 @@
                 <video width="100%" height="100%" autoplay muted loop>
                     <source src="video/MainBg_720.mp4" type="video/mp4" media="min-width:1200px">
                     <source src="video/MainBg_480.mp4" type="video/mp4" media="min-width:991px">
+
+                    <source src="video/MainBg_720.webm" type="video/webm" media="min-width:1200px">
+                    <source src="video/MainBg_480.webm" type="video/webm" media="min-width:991px">
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -139,10 +142,12 @@
 
             <div id="miniature" class="miniature">
                 <div class="embed-responsive embed-responsive-16by9" >
-                    <video id="about-video" width="100%" height="100%" controls preload="none" poster="video/Poster.jpg">
+                    <video id="about-video" width="100%" height="100%" controls="true" preload="none" poster="video/Poster.jpg">
                         <source src="video/About_720.mp4" type="video/mp4" media="min-width:1920px">
                         <source src="video/About_480.mp4" type="video/mp4" media="min-width:991px">
                         <source src="video/About_360.mp4" type="video/mp4" media="min-width:760px">
+
+                        <source src="video/About_720.webm" type="video/webm" media="min-width:1920px">
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -199,15 +204,15 @@
                             </div>
                             <p>увеличить изображение</p>
                         </div></div></div>
-            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m6.jpg"><div class="overlay">
-                <div class="icon">
-                    <svg viewBox="0 0 512 512">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                             xlink:href="#zoom"></use>
-                    </svg>
-                </div>
-                <p>увеличить изображение</p>
-            </div></div></div>
+            <!--<div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m6.jpg"><div class="overlay">-->
+                <!--<div class="icon">-->
+                    <!--<svg viewBox="0 0 512 512">-->
+                        <!--<use xmlns:xlink="http://www.w3.org/1999/xlink"-->
+                             <!--xlink:href="#zoom"></use>-->
+                    <!--</svg>-->
+                <!--</div>-->
+                <!--<p>увеличить изображение</p>-->
+            <!--</div></div></div>-->
         </div>
     </section>
 
@@ -340,37 +345,37 @@
 
             <div class="box">
                 <div class="box-title">
-                    <h2>испанская кухня</h2>
+                    <h2>ароматные закуски</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/1.jpg')"></div>
             </div>
             <div class="box">
                 <div class="box-title">
-                    <h2>итальянская кухня</h2>
+                    <h2>свежие салаты</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/2.jpg')"></div>
             </div>
             <div class="box">
                 <div class="box-title">
-                    <h2>немецкая кухня</h2>
+                    <h2>гарячие и холодные супы</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/3.jpg')"></div>
             </div>
             <div class="box">
                 <div class="box-title">
-                    <h2>фрацузская кухня</h2>
+                    <h2>мясные блюда</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/4.jpg')"></div>
             </div>
             <div class="box">
                 <div class="box-title">
-                    <h2>мексиканская кухня</h2>
+                    <h2>рыба и морепродукты</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/5.jpg')"></div>
             </div>
             <div class="box">
                 <div class="box-title">
-                    <h2>украинская кухня</h2>
+                    <h2>авторские дессерты</h2>
                 </div>
                 <div class="box-body" style="background-image: url('img/dish/6.jpg')"></div>
             </div>
@@ -402,7 +407,7 @@
         <div class="body">
 
             <div class="service-box">
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-1">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/1.png" alt=""></div>
                         <div class="text">
@@ -410,7 +415,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-2">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/2.png" alt=""></div>
                         <div class="text">
@@ -418,7 +423,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-3">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/3.png" alt=""></div>
                         <div class="text">
@@ -427,7 +432,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-4">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/4.png" alt=""></div>
                         <div class="text">
@@ -436,7 +441,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-5">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/5.png" alt=""></div>
                         <div class="text">
@@ -445,7 +450,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-6">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/6.png" alt=""></div>
                         <div class="text">
@@ -453,7 +458,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-7">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/7.png" alt=""></div>
                         <div class="text">
@@ -461,7 +466,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-8">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/8.png" alt=""></div>
                         <div class="text">
@@ -470,7 +475,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-9">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/9.png" alt=""></div>
                         <div class="text">
@@ -479,7 +484,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-10">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/10.png" alt=""></div>
                         <div class="text">
@@ -487,7 +492,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="box">
+                <div class="box" data-toggle="modal" data-target="#ser-11">
                     <div class="service">
                         <div class="icon"><img src="img/service-icon/11.png" alt=""></div>
                         <div class="text">
@@ -1000,6 +1005,215 @@
     </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+<div class="modal fade bs-example-modal-sm" id="ser-1" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Караоке</h3>
+
+            <p>Один из элементов развлекательной программы, которую может предложить наш ресторан это КАРАОКЕ. </p>
+            <p>Вы всегда можете уединится в отдельном помещении или спеть для большой аудитории. </p>
+            <p>Разнообразные песни на ваш выбор, радио микрофоны, большой экран. </p>
+            <p>Петь готов? Всегда готов!</p>
+
+            <img src="img/service/microphone.jpg" alt="">
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-2" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Аренда гриля</h3>
+
+            <p>В нашем меню есть разнообразные блюда на гриле, но если у Вас есть секрет приготовления собственного
+                шашлыка и вы хотите удивить своих близких, без проблем!</p>
+            <p>Мы с радостью предоставим Вам мангал и все необходимое для приготовления вашего шедевра за адекватное вознаграждение. </p>
+
+            <img src="img/service/grill.jpg" alt="">
+
+        </div>
+
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div class="modal fade bs-example-modal-sm" id="ser-3" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Оренда зала и территории</h3>
+
+            <p>Вы хотите отпраздновать свой праздник у нас в ресторане? Хотите чтобы вам не мешали наслаждаться
+                общением, едой, природой, хорошим настроением или всем одновременно, тогда Вы обратились по адресу.
+                Если у вас праздник на 60 человек или больше мы закроем ресторан специально для Вашего мероприятия. </p>
+            <p>А если у Вас небольшой праздник, но Вы хотите уединения, то за небольшой взнос мы сделаем это. </p>
+            <p>Любой ваш каприз возможен в ресторане "Парус на Десне"!</p>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-4" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>ГОСТИНИЧНЫЕ НОМЕРА</h3>
+
+            <p>На территории ресторана есть уютные гостиничные номера на любой вкус: </p>
+            <ul>
+                <li>двухместный стандарт; 500 грн/ночь</li>
+                <li>семейный номер с кухней на 4 человека; 1500 грн/ночь</li>
+                <li>семейный блок с отдельными комнатами на 6 человек; 1200 грн/ночь </li>
+            </ul>
+
+            <p>В каждом номере есть спутниковое TV, кондиционер, отдельный душ со всеми душевыми пренадлежностями и
+                сан. узел. </p>
+
+            <img src="img/service/hotel3.jpg" alt="">
+            <img src="img/service/hotel2.jpg" alt="">
+            <img src="img/service/hotel1.jpg" alt="">
+
+        </div>
+
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-5" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Мастер клас от шефа</h3>
+
+            <p>Вы хотите научиться вкусно готовить?
+                Создавать незабываемые и неповторимые блюда или просто удивить своих друзей виртуозной работой
+                шеф-повара, то Вам к нам?</p>
+            <p>Наш шеф-повар Канарян Едуард с лёгкостью обучит Вас всем секретам кулинарного искусства и подарит вам
+                рецепты своих блюд. </p>
+            <p>Так же мастер класс можем проводить под заказ, как у нас в ресторане так и с выездом к Вам. </p>
+
+            <img src="img/service/shef1.jpg" alt="">
+
+        </div>
+
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-6" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Аренда пирса</h3>
+
+            <p>Чтобы окунуться в атмосферу прибывания на природе, Вам непременно нужно остановить свой выбор на нашем
+                пирсе. </p>
+            <p>Только здесь Вы услышите пение птиц и звуки лягушек. Но присмотревшись по сторонам вы сами сможете
+                полюбоваться неторопливым движением природы, вибрацией воды от всплесков рыб, пролетающие редкие виды
+                птиц. </p>
+            <p>У нас очень большой и удобный пирс, так что на нем смело можно танцевать. </p>
+            <p>Нужно только позвонить, сделать заказ и мы подготовим его специально для Вас. </p>
+
+            <img src="img/service/pirs.jpg" alt="">
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-7" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Вело прогулки </h3>
+
+            <p>Хотите размять свои мышцы? </p>
+            <p>Тогда берите велосипед в аренду и отправляйтесь ездить по живописной местности, по побережью р. Десна или
+                просто по хорошей дороге. </p>
+            <p>Наши велосипеды рассчитаны для комфортной езды как по ровной дороге, так и по бездорожью. </p>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-8" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Детский аниматор</h3>
+
+            <p>Хотите отдохнуть и расслабиться, а ваши дети хотят развлекаться и веселится? </p>
+            <p>Вам нужен аниматор. </p>
+            <p>Позвоните заранее и закажите любого персонажа или просто веселых ребят, которые присмотрят и развлекут
+                ваше чадо, а вы сможете спокойно отдохнуть и расслабится. </p>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-9" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Декорирование залов и столов</h3>
+
+            <p>Мы работаем с лучшими декораторами и флористами.
+                Любой стиль, любой дизайн, любой Ваш каприз.</p>
+            <p>Мы поможем Вам воплотить мечты в реальность и сделаем ваш праздник незабываемым. </p>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-10" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Кальян на улице</h3>
+
+            <p>У нас можно насладиться природой, вдыхая приятные ароматы идеально приготовленного кальяна. </p>>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<div class="modal fade bs-example-modal-sm" id="ser-11" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm ser">
+        <div class="service-modal">
+            <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
+            <h3>Кейтеринг</h3>
+
+            <p>Мы готовы поддержать любую Вашу инициативу, а также предоставить высококачественные услуги в сфере
+                кейтеринг, изменив выбранную локацию на ту, которую вы пожелаете. </p>
+            <p>Обеспечим выездное мероприятие итальянской посудой, вкусной едой, хорошим обслуживанием. </p>
+
+        </div>
+
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+
+
+
 <button onclick="scrollTop();" class="scrollTop">
     <div class="icon">
         <svg viewBox="0 0 512 512">
@@ -1038,6 +1252,7 @@
         </g>
     </defs>
 </svg>
+
 
 
 

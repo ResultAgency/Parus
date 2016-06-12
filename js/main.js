@@ -223,7 +223,7 @@ $(document).ready(function(){
     
 
     $.each($("#s3 .img"),function (i,e) {
-        $(e).css('background-image','url('+$(e).data('fancybox-href'));
+        $(e).css('background-image','url('+$(e).data('fancybox-href')+')');
 
     });
 

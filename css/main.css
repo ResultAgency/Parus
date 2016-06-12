@@ -502,7 +502,9 @@ button.white:hover .icon,button.white:focus .icon{
     -webkit-align-items: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;
+    transition: 0.3s;
 }
+
 #s4 .box .box-title{
     height: 50px;
     background: #0093c5;
@@ -872,7 +874,14 @@ button.white:hover .icon,button.white:focus .icon{
 
     padding: 30px 0;
 }
-
+#s7 .box:hover{
+    cursor: pointer;
+    -webkit-transform: scale(1.02);
+    -moz-transform: scale(1.02);
+    -ms-transform: scale(1.02);
+    -o-transform: scale(1.02);
+    transform: scale(1.02);
+}
 #s7 .body .service-box{
     max-width: 1100px;
     margin: 0 auto;
@@ -1171,7 +1180,7 @@ button.white:hover .icon,button.white:focus .icon{
     position: relative;
     min-height: 550px;
     background-size: cover;
-    background-image: url('../img/background-s9.jpg');
+    background-image: url('../img/background-s1.jpg');
     background-position: center;
     background-repeat: no-repeat;
 
@@ -1274,6 +1283,9 @@ button.white:hover .icon,button.white:focus .icon{
 }
 .map{
     min-height: 300px;
+}
+#s10>.body,.map{
+    width: 100%;
 }
 #s10>.body>.title{
     background: #0093c5;
@@ -1393,6 +1405,43 @@ button.white:hover .icon,button.white:focus .icon{
     text-align: center;
     text-transform: uppercase;
 }
+.service-modal{
+    margin-top: 30px;
+    min-width: 300px;
+    background: white;
+    border-radius: 15px;
+    padding: 15px 25px;
+
+    text-align: center;
+    position: relative;
+}
+.service-modal ul{
+    text-align: left;
+}
+.service-modal h3{
+    color: black;
+}
+.modal img{
+    max-width: 450px;
+    margin: 10px auto;
+}
+.service-modal .close{
+    font-size: 12px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    color: #ffffff;
+    opacity: 1;
+    font-weight: lighter;
+    -webkit-transform: translate(0, -150%);
+    -moz-transform: translate(0, -150%);
+    -ms-transform: translate(0, -150%);
+    -o-transform: translate(0, -150%);
+    transform: translate(0, -150%);
+}
+.service-modal .close:hover{
+    text-decoration: underline;
+}
 .modal h4{
     color: white;
     font-size: 18px;
@@ -1449,4 +1498,7 @@ button.white:hover .icon,button.white:focus .icon{
 .scrollTop:hover .icon{
     fill: #818181;
     stroke: #818181;
+}
+.modal .modal-dialog.ser{
+    height: auto;
 }

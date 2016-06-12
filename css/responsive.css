@@ -65,6 +65,21 @@
     #s10 .contact{
         width: 50%;
     }
+    .service-modal{
+        margin-top: 30px;
+        min-width: 600px;
+        background: white;
+        border-radius: 15px;
+        padding: 15px 25px;
+
+        text-align: center;
+        position: relative;
+
+    }
+    .service-modal p{
+        text-align: left;
+    }
+
 }
 
 @media (min-width: 960px){
@@ -93,6 +108,9 @@
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
         flex-direction: row;
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
     }
     #s10 .body,#s10 .map{
         width: 50%;
