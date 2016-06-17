@@ -24,12 +24,12 @@
         <div class="overlay"></div>
         <div class="video-bg">
             <div class="embed-responsive embed-responsive-16by9">
-                <video width="100%" height="100%" autoplay muted loop>
-                    <source src="video/MainBg_720.mp4" type="video/mp4" media="min-width:1200px">
-                    <source src="video/MainBg_480.mp4" type="video/mp4" media="min-width:991px">
+                <video width="100%" height="100%" autoplay muted loop poster="img/background-s1.jpg" src="video/MainBg_720.mp4">
+                    <!--<source src="video/MainBg_720.mp4" type="video/mp4" media="min-width:1200px">-->
+                    <!--<source src="video/MainBg_480.mp4" type="video/mp4" media="min-width:991px">-->
 
-                    <source src="video/MainBg_720.webm" type="video/webm" media="min-width:1200px">
-                    <source src="video/MainBg_480.webm" type="video/webm" media="min-width:991px">
+                    <!--<source src="video/MainBg_720.webm" type="video/webm" media="min-width:1200px">-->
+                    <!--<source src="video/MainBg_480.webm" type="video/webm" media="min-width:991px">-->
                     Your browser does not support the video tag.
                 </video>
             </div>
@@ -51,7 +51,7 @@
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                         <li> <a href="#s2" class="scroll"><span>О нас</span></a> </li>
-                        <li> <a href="#s4" class="scroll"><span>Координаты</span></a> </li>
+                        <li> <a href="#s4" class="scroll"><span>Мы лучшие</span></a> </li>
                         <li> <a href="#s7" class="scroll"><span>Доп. услуги</span></a> </li>
                         <li> <a href="#s8" class="scroll"><span>отзывы</span></a> </li>
                         <li> <a href="#s9" class="scroll"><span>вопросы</span></a> </li>
@@ -142,12 +142,12 @@
 
             <div id="miniature" class="miniature">
                 <div class="embed-responsive embed-responsive-16by9" >
-                    <video id="about-video" width="100%" height="100%" controls="true" preload="none" poster="video/Poster.jpg">
-                        <source src="video/About_720.mp4" type="video/mp4" media="min-width:1920px">
-                        <source src="video/About_480.mp4" type="video/mp4" media="min-width:991px">
-                        <source src="video/About_360.mp4" type="video/mp4" media="min-width:760px">
+                    <video id="about-video" width="100%" height="100%" controls="true" preload="none" poster="video/Poster.jpg" src="video/About_720.mp4">
+                        <!--<source src="video/About_720.mp4" type="video/mp4" media="min-width:1920px">-->
+                        <!--<source src="video/About_480.mp4" type="video/mp4" media="min-width:991px">-->
+                        <!--<source src="video/About_360.mp4" type="video/mp4" media="min-width:760px">-->
 
-                        <source src="video/About_720.webm" type="video/webm" media="min-width:1920px">
+                        <!--<source src="video/About_720.webm" type="video/webm" media="min-width:1920px">-->
                         Your browser does not support the video tag.
                     </video>
                 </div>
@@ -159,7 +159,7 @@
 
     <section id="s3" class="row">
         <div class="owl-carousel">
-            <div><div class="img" rel="s3" data-fancybox-href="img/miniatures/m1.jpg"><div class="overlay">
+            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m1.jpg"><div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -168,16 +168,35 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div> </div>
-            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m2.jpg"><div class="overlay">
-                <div class="icon">
-                    <svg viewBox="0 0 512 512">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                             xlink:href="#zoom"></use>
-                    </svg>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m2.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
                 </div>
-                <p>увеличить изображение</p>
-            </div></div> </div>
-            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m3.jpg"><div class="overlay">
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m3.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m4.jpg">
+                <div class="overlay">
                 <div class="icon">
                     <svg viewBox="0 0 512 512">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -186,33 +205,405 @@
                 </div>
                 <p>увеличить изображение</p>
             </div></div></div>
-            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m4.jpg"><div class="overlay">
-                <div class="icon">
-                    <svg viewBox="0 0 512 512">
-                        <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                             xlink:href="#zoom"></use>
-                    </svg>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m5.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink"
+                                     xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
                 </div>
-                <p>увеличить изображение</p>
-            </div></div></div>
-            <div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m5.jpg"><div class="overlay">
-                            <div class="icon">
-                                <svg viewBox="0 0 512 512">
-                                    <use xmlns:xlink="http://www.w3.org/1999/xlink"
-                                         xlink:href="#zoom"></use>
-                                </svg>
-                            </div>
-                            <p>увеличить изображение</p>
-                        </div></div></div>
-            <!--<div><div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m6.jpg"><div class="overlay">-->
-                <!--<div class="icon">-->
-                    <!--<svg viewBox="0 0 512 512">-->
-                        <!--<use xmlns:xlink="http://www.w3.org/1999/xlink"-->
-                             <!--xlink:href="#zoom"></use>-->
-                    <!--</svg>-->
+            </div>
+
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m6.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m7.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m8.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m9.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m10.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m11.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m12.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m13.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m14.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m15.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m16.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m17.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <!--<div>-->
+                <!--<div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m18.jpg">-->
+                    <!--<div class="overlay">-->
+                        <!--<div class="icon">-->
+                            <!--<svg viewBox="0 0 512 512">-->
+                                <!--<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>-->
+                            <!--</svg>-->
+                        <!--</div>-->
+                        <!--<p>увеличить изображение</p>-->
+                    <!--</div>-->
                 <!--</div>-->
-                <!--<p>увеличить изображение</p>-->
-            <!--</div></div></div>-->
+            <!--</div>-->
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m19.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m20.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m21.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m22.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m23.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m24.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m25.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m26.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m27.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m28.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m29.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m30.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m31.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m32.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m33.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m34.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m35.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m36.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="img" data-fancybox-group="s3" data-fancybox-href="img/miniatures/m37.jpg">
+                    <div class="overlay">
+                        <div class="icon">
+                            <svg viewBox="0 0 512 512">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use>
+                            </svg>
+                        </div>
+                        <p>увеличить изображение</p>
+                    </div>
+                </div>
+            </div>
+           
         </div>
     </section>
 
@@ -1187,7 +1578,7 @@
             <button class="close" data-dismiss="modal" aria-label="Close">Закрыть</button>
             <h3>Кальян на улице</h3>
 
-            <p>У нас можно насладиться природой, вдыхая приятные ароматы идеально приготовленного кальяна. </p>>
+            <p>У нас можно насладиться природой, вдыхая приятные ароматы идеально приготовленного кальяна. </p>
 
         </div>
 

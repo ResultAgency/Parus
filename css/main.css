@@ -1408,6 +1408,7 @@ button.white:hover .icon,button.white:focus .icon{
 .service-modal{
     margin-top: 30px;
     min-width: 300px;
+    width: 100%;
     background: white;
     border-radius: 15px;
     padding: 15px 25px;
@@ -1423,6 +1424,7 @@ button.white:hover .icon,button.white:focus .icon{
 }
 .modal img{
     max-width: 450px;
+    width: 100%;
     margin: 10px auto;
 }
 .service-modal .close{
